@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "transformers-course"
+version = "0.1.0"
+description = ""
+authors = ["Elise Chin <elise.chin@adway-conseil.com>"]
+readme = "README.md"
+packages = [{include = "transformers_course"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+datasets = "^2.9.0"
+evaluate = "^0.4.0"
+transformers = {extras = ["sentencepiece"], version = "^4.26.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
